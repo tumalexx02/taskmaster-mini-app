@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { CalendarProvider } from "./context/calendar/CalendarContext";
+import { TasksProvider } from "./context/tasks/TasksContext";
+import Main from "./pages/Main"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <TasksProvider>
+      <CalendarProvider>
+        <Router>
+          <div className="flex flex-col justify-between h-screen">
+            <main className="container mx-auto">
+              <Routes>
+                <Route path="/" element={<Main />} />
+              </Routes>
+            </main>
+          </div>
+        </Router>
+      </CalendarProvider>
+    </TasksProvider>
   );
 }
 

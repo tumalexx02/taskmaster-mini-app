@@ -1,0 +1,44 @@
+.switcher {
+  transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: var(--tg-theme-bg-color);
+  padding-bottom: 0.5rem;
+  height: 8rem;
+  &_hide {
+    padding-bottom: 0;
+    height: 4.5rem;
+  }
+
+  &__button {
+    transition: all 0.5s;
+    padding: 0.25rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: var(--tg-theme-link-color);
+    font-size: 1rem; /* 16px */
+    line-height: 1.5rem; /* 24px */
+    &_hide {
+      color: var(--tg-theme-hint-color);
+      font-size: 0.875rem; /* 14px */
+      line-height: 1.25rem; /* 20px */
+    }
+  }
+
+  &__icon {
+    transition: all 0.5s;
+    margin-bottom: 0.25rem;
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.25rem; /* 36px */
+    height: 2.5rem;
+    color: var(--tg-theme-link-color);
+    &_hide {
+      color: var(--tg-theme-hint-color);
+      height: 1.25rem;
+    }
+  }
+}
