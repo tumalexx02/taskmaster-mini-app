@@ -19,7 +19,7 @@ function TaskList() {
           .filter((task) => dateComparison(task.date, activeDate, activeItem))
           .map((task, i) => <TaskItem key={i} task={task} />)
         : (<p className="text-[--tg-theme-hint-color] py-6 flex flex-col items-center text-center">
-            <BiTaskX className='text-3xl h-10 mb-1' />{`You have no tasks for this ${activeItem === 'MONTH' ? 'month' : 'date'}.`}
+            <BiTaskX className='text-3xl h-10 mb-1' />{`У вас нет задач в ${activeItem === 'MONTH' ? 'этом месяце' : 'этот день'}.`}
           </p>)}
     </div>
   )

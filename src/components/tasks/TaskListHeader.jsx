@@ -25,7 +25,7 @@ function TaskListHeader() {
       </button>
 
       <h1 className="text-md text-center w-full">
-        Tasks
+        Задачи
         <button 
           className={`inline-flex items-center transition pl-1 text-[--tg-theme-link-color] font-bold active:scale-95 disabled:active:scale-100 ${isShow && 'underline'}`}
           onClick={() => changeItemType(dispatch, activeItem)}

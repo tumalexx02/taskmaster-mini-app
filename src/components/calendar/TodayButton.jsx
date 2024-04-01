@@ -15,7 +15,7 @@ function TodayButton() {
         dispatch({type: 'SET_YEAR', payload: currentDate.getFullYear()})
         dispatch({type: 'SET_ACTIVE_ITEM', payload: 'DATE'})
       }}>
-        Today
+        Сегодня
     </button>
   )
 }

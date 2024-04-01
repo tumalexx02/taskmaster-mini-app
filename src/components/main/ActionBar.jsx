@@ -5,15 +5,15 @@ function ActionBar() {
     <div className="action-bar">
       <button className="action-bar__button">
         <FaSearch className="action-bar__icon" />
-        Search
+        Поиск
       </button>
       <button className="action-bar__button">
         <FaPlus className="action-bar__icon" />
-        Add
+        Добавить
       </button>
       <button className="action-bar__button">
         <FaArchive className="action-bar__icon" />
-        Archive
+        Архив
       </button>
     </div>
   )

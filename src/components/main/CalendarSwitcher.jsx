@@ -19,7 +19,7 @@ function CalendarSwitcher() {
     className={`switcher__button ${isShow && 'switcher__button_hide'}`}
     onClick={showCalendar}>
       <FaCalendar className={`switcher__icon ${isShow && 'switcher__icon_hide'}`}/>
-      {isShow ? 'Hide' : 'Show'} calendar
+      {isShow ? 'Скрыть' : 'Показать'} календарь
     </button>
     </div>
   )
