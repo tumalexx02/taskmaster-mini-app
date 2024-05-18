@@ -8,7 +8,7 @@ function ActionBar() {
 
   return (
     <div className="action-bar">
-      <button className="action-bar__button" disabled={activeItem === 'MONTH' && 'disabled' } onClick={sendDateToTelegram(activeDate)}>
+      <button className="action-bar__button" disabled={activeItem === 'MONTH' && 'disabled' } onClick={() => sendDateToTelegram(activeDate)}>
         <FaPlus className="action-bar__icon" />
         Добавить
       </button>
