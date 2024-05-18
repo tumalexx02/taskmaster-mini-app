@@ -201,3 +201,10 @@ export const changeItemType = (dispatch, activeItem) => {
     dispatch({ type: "SET_ACTIVE_ITEM", payload: "MONTH" });
   }
 };
+
+export const sendDateToTelegram = (date) => {
+  if (window.Telegram?.WebApp && date) {
+    window.Telegram.WebApp.sendData(JSON.stringify({ date }));
+    window.Telegram.WebApp.close();
+  }
+};
