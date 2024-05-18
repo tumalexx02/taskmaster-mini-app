@@ -7,7 +7,7 @@ function CalendarWrapper() {
     <div className="calendar__wrapper">
       <CalendarSwitcher />
       <Calendar />
-      <ActionBar />
+      {/* <ActionBar /> */}
     </div>
   )
 }

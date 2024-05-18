@@ -5,15 +5,15 @@
 @import "./style/actionBar.scss";
 @import "./style/switcher.scss";
 
-// :root {
-//   --tg-theme-bg-color: #1b1b1d;
-//   --tg-theme-secondary-bg-color: #1b1b1d;
-//   --tg-theme-text-color: #fff;
-//   --tg-theme-hint-color: #afaeaf;
-//   --tg-theme-button-text-color: #222222;
-//   --tg-theme-link-color: #c0c7d4;
-//   --tg-theme-button-color: #c0c7d4;
-// }
+:root {
+  --tg-theme-bg-color: #1b1b1d;
+  --tg-theme-secondary-bg-color: #1b1b1d;
+  --tg-theme-text-color: #fff;
+  --tg-theme-hint-color: #afaeaf;
+  --tg-theme-button-text-color: #222222;
+  --tg-theme-link-color: #c0c7d4;
+  --tg-theme-button-color: #c0c7d4;
+}
 
 body {
   overflow: hidden;
